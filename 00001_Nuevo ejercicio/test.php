@@ -1,3 +1,6 @@
 public function testTrueEsTrue(): void {
-  $this->assertTrue($x);
+  $this->assertEquals(
+    (new Foo())->bar(), 
+    (new Bar())->bar()
+  );
 }
